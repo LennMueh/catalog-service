@@ -1,5 +1,6 @@
 package com.polarbookshop.catalogservice.domain;
 
+import com.fasterxml.jackson.annotation.JsonCreator;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Pattern;
@@ -46,6 +47,7 @@ public record Book(
         @Version
         int version
 ) {
+        @JsonCreator
         public static Book of(String isbn, String title, String author, Double price) {
                 return new Book(
                         null, isbn, title, author, price, null, null, 0

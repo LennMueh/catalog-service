@@ -16,7 +16,7 @@ java {
 
 ext {
     set('springCloudVersion', "2025.1.0")
-    set('testcontainersVersion', "1.20.6")
+    set('testcontainersVersion', "2.0.3")
 }
 
 configurations {
@@ -40,7 +40,7 @@ dependencies {
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testImplementation 'org.springframework.boot:spring-boot-starter-webmvc-test'
     testImplementation 'org.springframework.boot:spring-boot-starter-webflux'
-    testImplementation 'org.testcontainers:postgresql'
+    testImplementation 'org.testcontainers:testcontainers-postgresql'
     testImplementation 'org.springframework.boot:spring-boot-data-jdbc-test'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
     annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
