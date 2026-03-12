@@ -3,7 +3,7 @@ on: push
 
 env:
   REGISTRY: ghcr.io
-  IMAGE:NAME: lennmueh/catalog-service
+  IMAGE_NAME: lennmueh/catalog-service
   VERSION: latest
 
 jobs:
