@@ -63,3 +63,8 @@ dependencyManagement {
         mavenBom "org.testcontainers:testcontainers-bom:${testcontainersVersion}"
     }
 }
+
+bootBuildImage {
+    builder = 'paketobuildpacks/builder-jammy-tiny:latest'
+    imageName = 'catalog-service'
+}
